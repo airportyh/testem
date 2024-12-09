@@ -28,7 +28,7 @@
     "commander": "^2.6.0",
     "compression": "^1.7.4",
     "consolidate": "^0.16.0",
-    "execa": "^1.0.0",
+    "execa": "^9.5.2",
     "express": "^4.10.7",
     "fireworm": "^0.7.2",
     "glob": "^7.0.4",
