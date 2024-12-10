@@ -1,17 +1,11 @@
-QUnit.test('says hello world', function(assert){
-    assert.equal(hello(), 'hello world', 'should equal hello world');
-});
+QUnit.test("demo failing socket", function (assert) {
+  let tooLargePayload = "";
+  while (tooLargePayload.length < 1e6) {
+    tooLargePayload += "x";
+  }
+  console.log("trigger websocket disconnect");
 
-QUnit.test('says hello to person', function(assert){
-    assert.equal(hello('Bob'), 'hello Bob', 'should equal hello Bob');
+  // Comment out the next line and CI will pass
+  console.log(tooLargePayload);
+  assert.equal(true, true, "this test should pass");
 });
-
-QUnit.todo('failing todo', function(assert){
-    assert.ok(false, 'should be true');
-});
-
-// This will cause integration tests to fail because QUnit will report passing todos
-// as failures (since you should just mark them as a normal test if they pass).
-// QUnit.todo('passing todo', function(assert){
-//     assert.ok(true, 'should be true');
-// });

@@ -3,7 +3,7 @@
     "qunit": "^2.2"
   },
   "scripts": {
-    "test": "node ../../testem.js ci -P 10"
+    "test": "node ../../testem.js ci"
   },
   "repository": {
     "type": "git",
