@@ -80,7 +80,7 @@
     "saucie": "^3.3.3",
     "shelljs": "^0.8.2",
     "sinon": "10.0.0",
-    "sinon-chai": "^3.2.0",
+    "sinon-chai": "^4.0.0",
     "socket.io-client": "^4.1.2",
     "tape": "^5.2.2"
   },
