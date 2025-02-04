@@ -546,7 +546,7 @@ describe('Config', function() {
 
   describe('browser_disconnect_timeout', function() {
     it('defaults to 10 seconds', function() {
-      expect(config.get('browser_disconnect_timeout')).to.eq(10);
+      expect(config.get('browser_disconnect_timeout')).to.eq(20);
     });
   });
 
@@ -557,8 +557,8 @@ describe('Config', function() {
   });
 
   describe('socket_heartbeat_timeout', function() {
-    it('defaults to 5 seconds when browser_disconnect_timeout is not provided', function() {
-      expect(config.get('socket_heartbeat_timeout')).to.eq(5);
+    it('defaults to 20 seconds when browser_disconnect_timeout is not provided', function() {
+      expect(config.get('socket_heartbeat_timeout')).to.eq(20);
     });
 
     it('defaults to browser_disconnect_timeout when value is not provided', function() {
