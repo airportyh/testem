@@ -44,7 +44,7 @@
     "socket.io": "^4.5.4",
     "spawn-args": "^0.2.0",
     "styled_string": "0.0.1",
-    "tap-parser": "^7.0.0",
+    "tap-parser": "^18.0.0",
     "tmp": "0.0.33"
   },
   "files": [
