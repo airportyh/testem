@@ -41,14 +41,14 @@ describe('Config', function() {
 
   it('gives defaultOptions properties when got', function() {
     let defaultOptions = {
-      host: 'localhost',
+      host: '0.0.0.0',
       port: 7337,
       config_dir: process.cwd(),
       test_page: 'http://my/test/page',
       file: 'defaultFile'
     };
     config.setDefaultOptions(defaultOptions);
-    expect(config.get('host')).to.equal('localhost');
+    expect(config.get('host')).to.equal('0.0.0.0');
     expect(config.get('port')).to.equal(7337);
     expect(config.get('config_dir')).to.equal(process.cwd());
     // returns file from progOptions and not defaultOptions because progOptions has higher priority
@@ -86,7 +86,7 @@ describe('Config', function() {
 
   it('calculates url for you', function() {
     let config = new Config();
-    assert.equal(config.get('url'), 'http://localhost:7357/');
+    assert.equal(config.get('url'), 'http://0.0.0.0:7357/');
   });
 
   it('allows to overwrite config values', function() {
@@ -259,7 +259,7 @@ describe('Config', function() {
 
   it('has fallbacks for host and port', function() {
     let config = new Config();
-    assert.equal(config.get('host'), 'localhost');
+    assert.equal(config.get('host'), '0.0.0.0');
     assert.equal(config.get('port'), 7357);
   });
 
