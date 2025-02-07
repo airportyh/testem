@@ -64,7 +64,7 @@ function decycle(object, maxDepth) {
     if (value === null || typeof value === 'undefined' || value instanceof Boolean || value instanceof Number) {
       return value;
     }
-    if (typeof value === 'object' && typeof value.nodeType === 'number') {
+    if (value instanceof Element) {
       return String(value);
     }
 
