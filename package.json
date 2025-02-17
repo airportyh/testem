@@ -67,7 +67,7 @@
   "devDependencies": {
     "bluebird-retry": "^0.11.0",
     "browserify": "^17.0.0",
-    "chai": "^4.0.2",
+    "chai": "^5.2.0",
     "chai-files": "^1.2.0",
     "chai-shallow-deep-equal": "^1.4.4",
     "cheerio": "1.0.0-rc.12",
